@@ -1,0 +1,45 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+abstract_target 'defaults' do
+    # Targets. Keep those in sync with the project.
+    'Production Staging'.split.each do |x|
+        target "#{x}"
+    end
+    
+    
+    pod 'CodePush', :path => '../node_modules/react-native-code-push'
+    pod 'react-native-spinkit', :path => '../node_modules/react-native-spinkit'
+    pod 'Picker', :path => '../node_modules/react-native-picker'
+    
+    # Explicitly include Yoga if you are using RN >= 0.42.0
+    pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+    
+    # Third party deps
+    pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+    pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+    pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+    
+    # ReactNative dependencies. See
+    # https://facebook.github.io/react-native/docs/embedded-app-ios.html
+    pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'Core',
+    'CxxBridge', # Include this for RN >= 0.47
+    'DevSupport',# Include this to enable In-App Devmenu if RN >= 0.43
+    'ART',
+    'RCTActionSheet',
+    'RCTImage',
+    'RCTNetwork',
+    'RCTText',
+    'RCTWebSocket',
+    'RCTLinkingIOS',
+    'RCTPushNotification',
+    'RCTVibration',
+    'RCTGeolocation',
+    'RCTCameraRoll',
+    'RCTAnimation',
+    'RCTBlob',
+    'RCTSettings'
+    ]
+    
+end

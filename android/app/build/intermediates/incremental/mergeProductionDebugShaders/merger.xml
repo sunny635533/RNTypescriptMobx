@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/sunny/Documents/svn/SalesRN/android/app/src/main/shaders"/></dataSet><dataSet config="Production"><source path="/Users/sunny/Documents/svn/SalesRN/android/app/src/Production/shaders"/></dataSet><dataSet config="debug"><source path="/Users/sunny/Documents/svn/SalesRN/android/app/src/debug/shaders"/></dataSet><dataSet config="ProductionDebug"><source path="/Users/sunny/Documents/svn/SalesRN/android/app/src/ProductionDebug/shaders"/></dataSet></merger>

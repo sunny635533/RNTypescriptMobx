@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var concession_1 = require("@src/ui/car-mall/concession");
+exports.ConcessionScreen = concession_1.ConcessionScreen;
+var store_1 = require("@src/ui/car-mall/store");
+exports.StoreScreen = store_1.StoreScreen;
+var product_1 = require("@src/ui/car-mall/product");
+exports.ProductScreen = product_1.ProductScreen;
+var order_page_1 = require("@src/ui/car-mall/order-page");
+exports.PayOilFeeScreen = order_page_1.PayOilFeeScreen;
+var product_detail_1 = require("@src/ui/car-mall/product-detail");
+exports.ProductDetailScreen = product_detail_1.ProductDetailScreen;
+var search_1 = require("@src/ui/car-mall/search");
+exports.SearchScreen = search_1.SearchScreen;
